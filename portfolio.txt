@@ -1,0 +1,49 @@
+ 
+Justin Law
+
+Columbia University, New York, NY									            May 2020 
+Bachelor of Science in Computer Engineering
+
+Claremont McKenna College, Claremont, CA 								            May 2018 
+Bachelor of Arts in Economics-Engineering, Combined Plan Program with Columbia University
+▪ GPA: 3.86/4.00, Dean’s List (2016) – Awarded to top 15% of school
+▪ Relevant Coursework: Corporate Finance, Financial Statement Analysis, Econometrics, Data Structures Advanced Programming (Java)
+ EXPERIENCE
+Nike, Beaverton, Oregon										   May 2018 - August 2018
+Application Engineer, Commerce Finance
+Backend development: RESTful APIs for Nike Financial System
+Frontend development: React Redux UI for displaying sales data to business
+Energeia, Sydney, NSW										         May 2017 - July 2017
+Summer Analyst
+Assisted in modeling out the Distributed Energy Resources network in Australia with growth rate assumptions based on market trends, industry leaders’ management guidance and failure rates of electricity generation facilities
+Modeled Solar installation prices using a part by part analysis of Solar PV Systems – panel, battery, meter, installation – and applying unique growth rates to each component based on individual market trends, tax rates and subsidies 
+Student Investment Fund, Claremont, CA						   		      May 2016 – May 2018
+Financial and Algorithmic Trading Analyst
+Algorithmic Trading:
+Wrote and back-tested python based algorithms to execute trades on the Quantopian trading platform
+Financial Analyst:
+Managed industry-specific (Materials, Utilities, and Industrials) stocks in a portfolio of investments valued at ~$2.1 million and successfully pitched Raytheon stock for a $90,000 position, currently at ~18% return
+Analyzed executive policy, market trends, and expected deals to extrapolate future cash flows and build an illustrative DCF
+Claremont Consulting Group, Claremont, CA							 January 2016 – May 2018
+Consultant
+Increased revenue from Pinterest by 450% for a sportswear firm by analyzing advertisement data and projecting ROIs for different marketing strategies on R
+Surveyed MLM industry and crafted market entry proposal for an e-commerce company in the US through a comprehensive industry review and analysis of competitor business models and distribution networks
+Evaluated the potential impact of CISCO Smart Cities IoT solutions on waste management in cities across the US
+Pacific Basin, Hong Kong										   July 2016 - August 2016 
+Finance Intern
+Engineered excel sheet to analyze Baltic exchange data using macros and logic based functions
+Audited performance of the company’s bank loans and swaps by calculating blended rates and using forward rates to discount swaps for mark-to-market value
+Analyzed financial leverage for discussion to increase ship fleet size and purchase ships financially distressed competitors
+Streamlined accounting system (IMOS) by assisting communication between accounting and financial teams
+ LEADERSHIP
+Roberts Environmental Center, Claremont, CA 						          September 2015 – May 2018
+Student Director, Environmental Consultant, Lead Analyst
+Manage team of six analysts, brainstorming and facilitating completion of new projects
+Implemented Monte Carlo simulations to determine profit maximizing strategy for Mono Lake tours
+Examined resource expenditure at CMC with respect to sustainability ratings standards and published the annual sustainability report
+Organized and led panel for Green Careers Conference at the Claremont Colleges
+
+SKILLS & INTERESTS 
+Technical: Excel, Capital IQ, Bloomberg, R, Java, Python, NodeJS, HTML-CSS, React Redux, Photoshop 
+Languages: Cantonese (fluent), Mandarin (fluent)
+Interests: French Horn (Performed at Carnegie Hall), Water Polo (NCAA DIII), Snowboarding, Surfing, Lock-picking, Rick & Morty
