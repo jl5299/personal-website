@@ -2,10 +2,13 @@
  *  * =================================================================== */
 
  html {
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
  }
  body {
     font-family: 'Source Sans Pro', sans-serif;
+    background:  black;
  }
 
  h1 {
@@ -41,30 +44,33 @@
     color: #9bddff;
  }
 
- .section-primary span {
-    color: #9bddff;
-    font-weight: bolder;
-    opacity: 1;
- }
 
 /* 02. Intro
  *  * =================================================================== */
 
  .section-image {
-   //background: #151515 no-repeat center center;
+    background: black no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
+    margin-top: 0;
+    margin-bottom: 0;
     position: relative;
     text-align: center;
-    color: #fff;
+    color: white;
     display: table;
 }
 
+.section-image h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
  .outro {
-        background: #151515  no-repeat center center;
+    background: black no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -72,38 +78,84 @@
     height: 10px;
     position: relative;
     text-align: center;
-    color: #fff;
+    color: white;
     display:table;
  }
 
- .img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
- }
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  float:right;
+}
 
- .intro-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#C4D8E2, black);
-    opacity: 1; 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 40px 40px 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 
- .intro {
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row0, .row0 a{}
+.row1{padding:80px 0 0 0;}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5, .row5 a{}
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1140px){
+    .hoc{max-width:1140px;}
+}
+
+@media screen and (min-width:978px) and (max-width:1140px){
+    .hoc{max-width:95%;}
+}
+
+.wrapper{display:block; background-color:black; position:relative; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
+
+
+.hoc{display:block; margin:0 auto;}
+
+
+.clear, .group{display:block;}
+.clear::before, .clear::after, .group::before, .group::after{display:table; content:"";}
+.clear, .clear::after, .group, .group::after{clear:both;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgl{margin:0 15px 10px 0; clear:left;}
+.imgr{margin:0 0 10px 15px; clear:right;}
+.imgover{display:inline-block; position:relative; max-width:100%;}
+.imgover::before, .imgover::after{display:block; position:absolute; content:""; text-align:center; opacity:0;}
+.imgover::before{top:0; right:0; bottom:0; left:0;}
+.imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"Font Awesome\ 5 Free"; font-weight:900; content:"\f067";/* fa-plus */ font-size:28px;}
+.imgover:hover::before, .imgover:hover::after{opacity:1;}
+
+
+
+.intro {
+    background:  black;
     vertical-align: middle;
-    text-align: center;
+    text-align: left;
     display:table-cell;
-    -webkit-transform: translateY(-2.1rem);
-    -ms-transform: translateY(-2.1rem);
-    transform: translateY(-2.1rem);
 }
 
 .intro .row {
@@ -122,22 +174,6 @@
     text-transform: uppercase;
     letter-spacing: .3rem;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-}
-
-.section-image span {
-    text-transform: uppercase;
-    font-size: 1.4em;
-    padding: 0 10px;
-    font-weight: 100;
-}
-
-.section-image h1 {
-    margin-top: 0;
-}
-
-.section-image p {
-    font-weight: lighter;
-    opacity: 0.9;
 }
 
 .dark {
@@ -181,50 +217,6 @@
 
 
 
-/* @@@@@@@@@@@@ JUSTIN ADDED @@@@@@@@@@@@@@
- *  *  * =================================================================== */
- #form-search {
-   width: 80%;
-
- }
-
-.form #form-search {
-  padding: 0 8px;
-}
-
-.form {
-  text-align: center;
-}
-
-#form-search { 
-  width: 750px;
-  line-height: 32px;
-  padding: 20px 10px;
-  color: black;
-}
-
-table, th, td {
-    padding: 15px;
-    margin: auto;
-    text-align: center;
-}
-
-input {
-  color: black;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.add_field_button{
-  color: black;
-  display: inline-block;
-  border: 3px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
 
 
 /* 04. Icon Font
@@ -259,7 +251,6 @@ section {
 
 .section-colour {
     background-color: #000;
-//9bddff;
     color: #000;
 }
 
@@ -319,136 +310,6 @@ footer p {
 }
 
 
-/* EXTRAS
- *  * =================================================================== */
-
-
-
-        /* Mouse Icon
- *          * =================================================================== */
-        .mouse-icon {
-            border: 2px solid #fff;
-            border-radius: 16px;
-            display: block;
-            height: 50px;
-            margin: 100px auto;
-            position: absolute;
-            left: 0;
-            right: 0;
-            width: 30px;
-            z-index: 10;
-        }
-        .mouse-icon .scroll {
-            animation-delay: 0s;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-name: scrolling;
-            animation-play-state: running;
-            animation-timing-function: linear;
-        }
-        .mouse-icon .scroll {
-            background: #fff none repeat scroll 0 0;
-            border-radius: 10px;
-            height: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            top: 4px;
-            width: 4px;
-        }
-        @keyframes scrolling {
-        0% {
-            opacity: 0;
-            top: 5px;
-        }
-        30% {
-            opacity: 1;
-            top: 10px;
-        }
-        100% {
-            opacity: 0;
-            top: 25px;
-        }
-        }
-
-        .pad-xl {
-            padding: 200px 0px;
-        }
-
-        .pad-lg {
-            padding: 160px 0px;
-        }
-
-        .pad-sm {
-            padding: 80px 0px;
-        }
-
-        .pad-xs {
-            padding: 30px 0px;
-        }
-
-        /* /Mouse Icon
- *          * =================================================================== */
-
- 
-/* Media Queries
- *  * =================================================================== */
-
-@media (max-width: 480px) {
-    .social a {
-        padding: 0.4em;
-        font-size: 0.9em;
-    }
-
-    .social-footer {
-        text-align: center;
-        position: center;
-        text-align: center;
-    }
-
-    .social-footer a {
-        padding: 0.3em;
-        font-size: 1.6em;
-
-    }
-
-    .intro-desc {
-        font-size: 0.7em;
-    }
-
-    .section-image span {
-        font-size: 1em;
-        padding: 0 1px;
-
-}
-
-    .intro h1 {
-        font-size: 50px;
-        padding-top: 15px;
-    }
-
-    footer {
-        text-align: center;
-        padding-bottom: 100px;
-    }
-
-    #skills {
-) no-repeat center center;
-        background-position: top center;
-
-    }
-}
-
-@media (max-width: 991px) {
-    .social-footer {
-        text-align: center;
-    }
-
-    footer p {
-    text-align: center;
-    }
-
-}
 
 
 
