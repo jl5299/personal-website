@@ -2,7 +2,7 @@
  *  * =================================================================== */
 
  html {
-    overflow: hidden;
+    overflow-x: hidden;
     height: 100%;
     width: 100%;
  }
@@ -48,7 +48,7 @@
 /* 02. Intro
  *  * =================================================================== */
 
- .section-image {
+ .section-intro {
     background: black no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -63,11 +63,53 @@
     display: table;
 }
 
-.section-image h1 {
+.section-intro h1 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
+
+
+ .section-contact {
+    background: black no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: table;
+}
+
+.section-contact h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+ .section-about {
+    background: black no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: table;
+}
+
+.section-about h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
  .outro {
     background: black no-repeat center center;
@@ -106,6 +148,48 @@
 
 
 
+::-webkit-input-placeholder {
+   color: #9bddff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #9bddff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #9bddff;  
+}
+
+:-ms-input-placeholder {  
+   color: #9bddff;  
+}
+
+form {
+  padding: 5px;
+  background: black;
+  display: grid;
+  color: white;
+  text-align: left;
+}
+
+form input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #9bddff;
+  outline: none;
+  font-size: 18px;
+  text-align: left;
+}
+
+form button {
+  background: black;
+  border: 14;
+  border-color: #9bddff;
+  color: white;
+
+}
+
+
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0, .row0 a{}
@@ -141,6 +225,7 @@ a{outline:none; text-decoration:none;}
 .fl_right, .imgr{float:right;}
 
 img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+#about { width:auto; height:auto; margin-left: 14px; margin-right: 14px}
 .imgl{margin:0 15px 10px 0; clear:left;}
 .imgr{margin:0 0 10px 15px; clear:right;}
 .imgover{display:inline-block; position:relative; max-width:100%;}
@@ -148,7 +233,6 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 .imgover::before{top:0; right:0; bottom:0; left:0;}
 .imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"Font Awesome\ 5 Free"; font-weight:900; content:"\f067";/* fa-plus */ font-size:28px;}
 .imgover:hover::before, .imgover:hover::after{opacity:1;}
-
 
 
 .intro {
@@ -167,6 +251,10 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
     font-size: 84px;
 }
 
+.intro h2 {
+    font-size: 50px;
+}
+
 .intro h5 {
     color: #9bddff;
     font-size: 2.3rem;
@@ -175,6 +263,86 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
     letter-spacing: .3rem;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
+
+
+.about {
+    float:center;
+    display:inline-block;
+    background:  black;
+    vertical-align: text-top;
+    position:relative;
+    width:40%; 
+    margin-left:14px; 
+    margin-right:14px;
+    text-align:center; 
+    word-wrap:break-word;
+}
+
+
+
+.about .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+.about p {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+
+.about h2 {
+    font-size: 40px;
+    color: white;
+}
+
+
+.about h5 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.contact {
+    float:center;
+    display:inline-block;
+    background:  black;
+    vertical-align: text-top;
+    position:relative;
+    width:40%; 
+    margin-left:14px; 
+    margin-right:14px;
+    text-align:left; 
+    word-wrap:break-word;
+}
+
+
+.contact .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+.contact h2 {
+    font-size: 40px;
+    color: #9bddff;
+}
+
+.contact h5 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
 
 .dark {
     background: #000;
@@ -235,9 +403,9 @@ section {
 }
 
 .profilepic {
-    height: 150px;
+    height: 300px;
     width: auto;
-    border-radius: 300px;
+    border-radius: 500px;
 }
 
 .section-primary p {
@@ -289,6 +457,87 @@ section {
     border-top: 5px solid #fff;
  }
 
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+  transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > img.blur {
+  filter: blur(5px);
+}
+
+.img-wrapper:hover > img.gray {
+  filter: grayscale(1);
+}
+
+.img-wrapper:hover > img.zoom {
+  transform: scale(1.1);
+}
+
+.img-wrapper > .content.fade {
+  opacity: 0;
+}
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+.img-wrapper > .content.slide-left {
+  transform: translateX(-100%);
+}
+.img-wrapper:hover > .content.slide-left {
+  transform: translateX(0);
+}
+
+.img-wrapper > .content.slide-right {
+  transform: translateX(100%);
+}
+.img-wrapper:hover > .content.slide-right {
+  transform: translateX(0);
+}
+
+.img-wrapper > .content.slide-down {
+  transform: translateY(-100%);
+}
+.img-wrapper:hover > .content.slide-down {
+  transform: translateY(0);
+}
+
+.img-wrapper > .content.slide-up {
+  transform: translateY(100%);
+}
+.img-wrapper:hover > .content.slide-up {
+  transform: translateY(0);
+}
 
 
 /* 05. Footer
