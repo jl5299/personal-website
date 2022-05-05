@@ -117,7 +117,7 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 30px 30px 30px 30px;
+  padding: 25px 45px 25px 45px;
   text-decoration: none;
   font-size: 14px;
   line-height: 25px;
@@ -148,6 +148,7 @@
   }
   .header-right {
     float: none;
+    display: flex;
   }
 }
 
@@ -370,7 +371,7 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
   }
 
   .col-md-12 {
-    top: 0%;
+    top: 14%;
   }
 
   .bottom {
@@ -378,7 +379,7 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
   }
 
   .intro{
-    height: 0.5vh;
+    height: 69vh;
   }
 }
 
