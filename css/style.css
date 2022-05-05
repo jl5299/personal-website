@@ -140,7 +140,7 @@
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .header a {
     float: none;
     display: block;
@@ -322,7 +322,7 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 }
 
 
-@media screen or (max-width: 1000px) {
+@media screen or (max-width: 800px) {
   .picture {
   width: 90%;
   display: block; /* Stops it from floating */
@@ -365,7 +365,7 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
   }
