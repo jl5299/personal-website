@@ -1,3 +1,6 @@
+@import url(http://mcansh.github.io/yeezy-logo-font/assets/css/font.css);
+
+
 /* 01. Basic Styles
  *  * =================================================================== */
 
@@ -7,7 +10,7 @@
     width: 100%;
  }
  body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Yeezy';
     background:  black;
  }
 
