@@ -25,11 +25,29 @@
     <link href="css/style.css" rel="stylesheet"><!-- Timeline CSS -->
     <link href="css/timeline.css" rel="stylesheet">
 
+    <style type="text/css">
+    #loader {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.75) url("assets/loading.gif") no-repeat center center;
+      z-index: 10000;
+    }
+</style>
+
     <script>
         window.addEventListener("load", function() {
+            var spinner = $('#loader');
+
             const form = document.getElementById('my-form');
             form.addEventListener("submit", function(e) {
                 e.preventDefault();
+                spinner.show();
+
                 const data = new FormData(form);
                 const action = e.target.action;
                 fetch(action, {
@@ -37,11 +55,17 @@
                     body: data,
                 })
                 .then(() => {
+                    spinner.hide();
                     alert("Success!");
+                    form.reset()
                 })
+
             });
         });
     </script>
+
+    
+
 </head>
 
 <body>
@@ -89,6 +113,7 @@
         </div>
     </section>
 
+    <div id="loader"></div>
 
     <!-- FOOTER SECTION -->
    <section class="outro">
