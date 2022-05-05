@@ -278,8 +278,6 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
     word-wrap:break-word;
 }
 
-
-
 .about .row {
     margin-right: 0;
     margin-left: 0;
@@ -308,10 +306,27 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 }
 
 
+@media screen and (max-width: 1000px) {
+  .contact {
+  width: 90%;
+  display: block; /* Stops it from floating */
+  margin: auto; /* Ensures that it is centered */
+  margin-bottom: 25px; /* Space between the stacked elements */
+  }
 
+  .about {
+  width: 90%;
+  display: block; /* Stops it from floating */
+  margin: auto; /* Ensures that it is centered */
+  margin-bottom: 25px; /* Space between the stacked elements */
+  }
+ 
+}
+
+/*width:50%;float:left; display:inline-block; margin-top: 1vh"*/
 
 .contact {
-    float:center;
+    float:left;
     display:inline-block;
     background:  black;
     vertical-align: text-top;
@@ -322,7 +337,6 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
     text-align:left; 
     word-wrap:break-word;
 }
-
 
 .contact .row {
     margin-right: 0;
@@ -403,7 +417,7 @@ section {
 }
 
 .profilepic {
-    height: 300px;
+    height: 400px;
     width: auto;
     border-radius: 500px;
 }
