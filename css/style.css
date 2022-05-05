@@ -368,9 +368,18 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
   .column {
     width: 100%;
   }
+
   .col-md-12 {
     top: 0%;
-}
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  .intro{
+    height: 0.5vh;
+  }
 }
 
 
