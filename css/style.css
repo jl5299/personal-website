@@ -239,7 +239,9 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 .imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"Font Awesome\ 5 Free"; font-weight:900; content:"\f067";/* fa-plus */ font-size:28px;}
 .imgover:hover::before, .imgover:hover::after{opacity:1;}
 
-
+.col-md-12 {
+    top: 30%;
+}
 .intro {
     background:  black;
     vertical-align: middle;
@@ -366,6 +368,9 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
   .column {
     width: 100%;
   }
+  .col-md-12 {
+    top: 0%;
+}
 }
 
 
