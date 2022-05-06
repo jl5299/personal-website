@@ -1,13 +1,17 @@
 /* 01. Basic Styles
  *  * =================================================================== */
 
+
+@import url(http://mcansh.github.io/yeezy-logo-font/assets/css/font.css);
+
  html {
     overflow-x: hidden;
     height: 100%;
     width: 100%;
  }
  body {
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Yeezy';
     background:  black;
  }
 
@@ -43,7 +47,6 @@
  .colour-splash {
     color: #9bddff;
  }
-
 
 /* 02. Intro
  *  * =================================================================== */
