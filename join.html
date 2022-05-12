@@ -84,8 +84,8 @@
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+      document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+      + minutes + " : " + seconds;
 
       // If the count down is finished, write some text
       if (distance < 0) {
@@ -108,7 +108,7 @@
   <div class="header-right">
                     <a href="/">HOME</a>
                     <a href="./about.html">ABOUT</a>
-                    <a href="./contact.html">JOIN</a>
+                    <a href="./join.html">JOIN</a>
             </div>
     </div>
     <!-- HEADER BAR -->
@@ -123,9 +123,8 @@
                 <img src="assets/AvalonDinner.jpg" id = "contact">
             </div>
             <div class="column">
-                <h2>Feeling Social?</h2>
-                <h5>HOMECOMING: JUNE 4th </h5>
-                <h5>THE TREEHAUS</h5>
+                <h2>ENTER THE TREEHAUS</h2>
+                <h5>JUNE 4</h5>
                 <h4 id="demo"></h4>
                 <form
                   id="my-form"
