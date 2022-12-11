@@ -183,10 +183,6 @@ input:checked + .slider:before {
     <section class ="section-picture">
         <div style="display:block; width: 100%;">
             <div>
-                <img src="assets/AvalonDinner.jpg" id = "contact">
-                <img src="assets/Felix.jpg" id = "contactFelix">
-            </div>
-            <div>
                 <h2>WARM THE HOUSE</h2>
                 <h5>JAN 7</h5>
                 <h4 id="demo"></h4>
@@ -194,15 +190,22 @@ input:checked + .slider:before {
                   id="my-form"
                   method="POST" 
                   action="https://script.google.com/macros/s/AKfycbwZP3hwCfmK5D1GDGY9O7e_E7CDp35QgDiEVCIznIIF5MsjbFeSkoe9vgOrnaXXS-NKNw/exec"
+                  style = "width:50%; margin-left:25%"
                 >
                     <input name="Name" type="text" placeholder="Name" required>
                     <input name="Email" type="email" placeholder="Email" color = "#9bddff" required>
                     <input name="Description" type="text" placeholder="Telephone" required>
- 		    <h6>Share contact with other attendees?</h6>
-		    <label class = "switch"> <input name="Share contact details with other attendees?" type="checkbox"i checked><span class = "slider round"></span></label>
-            </form>
-            <button type="submit">Send it</button>
-	       </div>
+                <h6>Share contact with other attendees?</h6>
+                <label class = "switch"> <input name="Share contact details with other attendees?" type="checkbox"i checked><span class = "slider round"></span></label>
+                </form>
+                <button type="submit">Send it</button>
+                <br></br>
+            </div>
+            <div>
+                <img src="assets/AvalonDinner.jpg" id = "contact" style = "width:50%">
+                <img src="assets/Felix.jpg" id = "contactFelix" style = "width:50%">
+            </div>
+
 
 
     </section>
