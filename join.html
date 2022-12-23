@@ -182,27 +182,29 @@ input:checked + .slider:before {
     <!-- FORM SECTION -->
     <section class ="section-picture">
         <div style="display:block; width: 100%;">
-            <div class="column">
-                <img src="assets/FelixJLaw.jpg" id = "contact">
-            </div>
-            <div class="column">
-                <h2>WARM THE HOUSE</h2>
-                <h5>JAN 7</h5>
-                <h4 id="demo"></h4>
-                <form
-                  id="my-form"
-                  method="POST" 
-                  action="https://script.google.com/macros/s/AKfycbwZP3hwCfmK5D1GDGY9O7e_E7CDp35QgDiEVCIznIIF5MsjbFeSkoe9vgOrnaXXS-NKNw/exec"
-                >
-                    <input name="Name" type="text" placeholder="Name" required>
-                    <input name="Email" type="email" placeholder="Email" color = "#9bddff" required>
-                    <input name="Description" type="text" placeholder="Telephone" required>
-         		    <h6>Share contact with other attendees?</h6>
-        		    <label class = "switch"> <input name="Share contact details with other attendees?" type="checkbox"i checked><span class = "slider round"></span></label>
-           </div>
+            <h2>WARM THE HOUSE</h2>
+            <h5>JAN 7</h5>
+            <h4 id="demo"></h4>
+            <form
+              id="my-form"
+              method="POST" 
+              action="https://script.google.com/macros/s/AKfycbwZP3hwCfmK5D1GDGY9O7e_E7CDp35QgDiEVCIznIIF5MsjbFeSkoe9vgOrnaXXS-NKNw/exec"
+                                style = "width: max(50%, min(500px, 75%)); text-align: center; margin: 0 auto"
+
+            >
+                <input name="Name" type="text" placeholder="Name" required>
+                <input name="Email" type="email" placeholder="Email" color = "#9bddff" required>
+                <input name="Description" type="text" placeholder="Telephone" required>
+     		    <h6>Share contact with other attendees?</h6>
+    		    <label class = "switch"> <input name="Share contact details with other attendees?" type="checkbox"i checked><span class = "slider round"></span></label>
+        </div>
                 <button type="submit">Send it</button>
-                </form>
-       </div>
+            </form>
+        
+        <div>
+            <br></br>
+            <img src="assets/FelixJLaw.jpg" id = "contact">
+        </div>
     </section>
 
     <div id="loader"></div>
