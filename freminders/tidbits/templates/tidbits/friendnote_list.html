@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Book List</h1>
+  {% if friendnote_list %}
+  <ul>
+    {% for note in friendnote_list %}
+      <li>
+        <p>{{ note.friend }}</p> ({{note.content}})
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no books in the library.</p>
+  {% endif %}
+{% endblock %}
