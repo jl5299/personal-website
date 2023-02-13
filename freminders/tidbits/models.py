@@ -45,7 +45,7 @@ class FriendNote(models.Model):
 
     def get_absolute_url(self):
         """Returns the URL to access a particular instance of MyModelName."""
-        return reverse('model-detail-view', args=[str(self.friend), str(self.content)])
+        return reverse('friendnote', args=[str(self.friend), str(self.content)])
 
     def __str__(self):
         """String for representing the MyModelName object (in Admin site etc.)."""
